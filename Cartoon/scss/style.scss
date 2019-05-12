@@ -1,0 +1,155 @@
+$rosa: #ec0080;
+$azul: #009ade;
+$amarelo: #ffea00;
+$cinza: #4c4c4c;
+$preto: #000000;
+$branco: #ffffff;
+
+
+@mixin btn-click($color){
+  background-color: $preto;
+  color: $color;
+}
+
+
+
+
+.logo{
+  float: left;
+
+  a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  &:hover{background-color: $amarelo;}
+}
+
+}
+ 
+.flex-container {
+  color:$branco;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  background-color: $branco;
+  border-radius:10%; 
+
+  .amarelo:hover{
+  background-color:$amarelo;
+  color:$preto;
+  &:active{@include btn-click($amarelo)}
+  }
+
+ .azul:hover{
+ color:$preto;
+ background-color:$azul;
+ &:active{@include btn-click($azul)}
+
+ }
+
+ .rosa:hover{
+ color:$preto;
+ background-color:$rosa;
+ &:active{@include btn-click($rosa)}
+ }
+
+ .proximo:hover{
+  color:$branco;
+  background-color:$preto;
+  &:active{@include btn-click($branco)}
+ }
+}
+
+.flex-container > div {
+  background-color: $cinza;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px; 
+  border-radius: 20%;
+  }
+
+
+#navbar{
+   background-color: $preto;
+}
+
+.Pesquisar{
+  color:$preto;
+  background-color:$branco;
+  border-color:$branco;
+  &:hover{ 
+  background-color:$amarelo;
+  border-color:$amarelo; 
+}
+}
+
+
+
+.diaProgramacao{
+font-size: 3.5em;
+font-weight: bold;
+font-family: monospace;
+background-color:$azul;
+margin:12px 0;
+border-top:4px solid $amarelo;
+padding: 0.5rem;
+color:$branco;
+}
+
+.backgroundblack{
+ background-color:$cinza;
+}
+
+.rodape{
+  background-color:$preto;
+  font-size: 1.0em;
+  padding-left: 20%;
+  color: $branco;
+}
+
+.textwhite{
+  color:$branco;
+}
+
+.textyellow{
+color:$amarelo;
+}
+
+.btnJogar{
+padding-top:10px;
+font-size: 3.5em;
+font-weight: bold;
+font-family: monospace;
+background-color:$amarelo;
+margin:12px 0;
+border:4px solid $rosa;
+padding: 0.5rem;
+color:$branco;
+border-radius:20%;
+&:hover{
+background-color:$rosa;
+color:$preto;
+}
+}
+
+.conteudo{
+  display: table;
+}
+.desc{
+  width: 20%;
+  background-color: $amarelo;
+  display: table-cell;
+}
+.gallery-{
+  padding-top:15px;
+}
+.textHour{
+  background-color:$branco;
+  text-decoration:center;
+}
+
+
+

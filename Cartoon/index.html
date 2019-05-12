@@ -4,22 +4,29 @@
 <head>
 	<title>Cartoon.html</title> 
 	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="css/gallery.min.css">
   <link rel="stylesheet" href="css/gallery.theme.css">
 
+
+
 </head>
 <body  background="res/ImageBackground.jpg" width="800" height="800">
-   <header>
-    <nav id="navbar"  class="navbar navbar-dark">
-      <li class="logo"><a href="#"><img width="200px" height="100px"  src="res/Cartoon.png"></a></li>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-        <button class="btn my-2 my-sm-0 Pesquisar"  type="submit" ><img width="25" height="25" src="res/search.png"></button>
-      </form>
-    </nav>
+
+
+
+ <header>
+  <nav id="navbar"  class="navbar navbar-dark">
+    <li class="logo"><a href="#"><img width="200px" height="100px"  src="res/Cartoon.png"></a></li>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+      <button class="btn my-2 my-sm-0 Pesquisar"  type="submit" ><img width="25" height="25" src="res/search.png"></button>
+    </form>
   </nav>
+</nav>
 </header>
 
 <section class="container">
@@ -30,45 +37,55 @@
     </form>
   </div>
   <div class="diaProgramacao">Segunda 18</div>
-  <div class="conteudo">
-    <div align="left"  class="flex-container" width>
+  <div class="conteudo container">
+    <div class="row">
+      <div class="flex-container grid col-md-8">
 
-      <div class="azul">00h</div>
-      <div class="rosa">01h</div>
-      <div class="amarelo">02h</div>
-      <div class="azul">03h</div>
-      <div class="rosa">04h</div>
-      <div class="amrelo">05h</div>
-      <div class="azul">06h</div>
-      <div class="rosa">07h</div>
-      <div class="amarelo">08h</div>
-      <div class="azul">09h</div>
-      <div class="rosa">10h</div>
-      <div class="amarelo">11h</div>
-      <div class="azul">12h</div>
-      <div class="rosa">13h</div>
-      <div class="amarelo">14h</div>
-      <div class="azul">15h</div>
-      <div class="rosa">16h</div>
-      <div class="amarelo">17h</div>
-      <div class="azul">18h</div>
-      <div class="rosa">19h</div>
-      <div class="amarelo">20h</div>
-      <div class="azul">21h</div>
-      <div class="rosa">22h</div>
-      <div class="amarelo">23h</div>
-      <div class="proximo">></div>
+        <input id="btn" value="00h" onclick="funcao(1)" class="azul" readonly="true" type="text"></input>
+        <input id="btn2" value="01h" onclick="funcao(2)" class="rosa" readonly="true" type="text"></input>
+        <input id="btn3" value="02h" onclick="funcao(3)" class="amarelo" readonly="true" type="text"></input>
+        <input id="btn4" value="03h" onclick="funcao(4)" class="azul" readonly="true" type="text"></input>
+        <input id="btn5" value="04h" onclick="funcao(5)" class="rosa" readonly="true" type="text"></input>
+        <input id="btn6" value="05h" onclick="funcao(6)" class="amarelo" readonly="true" type="text"></input>
+        <input id="btn7" value="06h" onclick="funcao(7)" class="azul" readonly="true" type="text"></input>
+        <input id="btn8" value="07h" onclick="funcao(8)" class="rosa" readonly="true" type="text"></input>
+        <input id="btn9" value="08h" onclick="funcao(9)" class="amarelo" readonly="true" type="text"></input>
+        <input id="btn10" value="09h" onclick="funcao(10)" class="azul" readonly="true" type="text"></input>
+        <input id="btn11" value="10h" onclick="funcao(11)" class="rosa" readonly="true" type="text"></input>
+        <input id="btn12" value="11h" onclick="funcao(12)" class="amarelo" readonly="true" type="text"></input>
+        <input id="btn13" value="12h" onclick="funcao(13)" class="azul" readonly="true" type="text"></input>
+        <input id="btn14" value="13h" onclick="funcao(14)" class="rosa" readonly="true" type="text"></input>
+        <input id="btn15" value="14h" onclick="funcao(15)" class="amarelo" readonly="true" type="text"></input>
+        <input id="btn16" value="15h" onclick="funcao(16)" class="azul" readonly="true" type="text"></input>
+        <input id="btn17" value="16h" onclick="funcao(17)" class="rosa" readonly="true" type="text"></input>
+        <input id="btn18" value="17h" onclick="funcao(18)" class="amarelo" readonly="true" type="text"></input>
+        <input id="btn19" value="18h" onclick="funcao(19)" class="azul" readonly="true" type="text"></input>
+        <input id="btn20" value="19h" onclick="funcao(20)" class="rosa" readonly="true" type="text"></input>
+        <input id="btn21" value="20h" onclick="funcao(21)" class="amarelo" readonly="true" type="text"></input>
+        <input id="btn22" value="21h" onclick="funcao(22)" class="azul" readonly="true" type="text"></input>
+        <input id="btn23" value="22h" onclick="funcao(23)" class="rosa" readonly="true" type="text"></input>
+        <input id="btn24" value="23h" onclick="funcao(24)" class="amarelo" readonly="true" type="text"></input>
+        <input id="btn25" value=">" onclick="funcaoNext()" class="proximo" readonly="true" type="text"></input>
+      </div>
+      <div id="back" class="desc col-md-4 schedule">
+        <span id="hour">
+          23h
+        </span>
+        <div>
+          <span>Apenas um show</span>
+        </div>
+        <div>
+          <span>Apenas um show</span>
+        </div>
+        <div>
+          <span>Apenas um show</span>
+        </div>
+        <div>
+          <span>Apenas um show</span>
+        </div>
+
+      </div>
     </div>
-    <div class="desc">
-           <ul class="list-unstyled text-small">
-          <li><div class="textHour" href="#" >Cool stuff</a></li>
-          <li><a class="textwhite" href="#">Random feature</a></li>
-          <li><a class="textwhite" href="#">Team feature</a></li>
-
-        </ul>
-
-    </div>
-
   </div>
 </section>
 <div class="container gallery-">
@@ -137,6 +154,84 @@
   <div class="rodape">O uso deste site significa a aceitação dos termos de uso. TM & 2018 Cartoon Network. Uma empresa WarnerMedia. </div>
 
 </footer>
+
+<script>
+function funcao(id) {
+ if(id === 1){
+   var hora = document.getElementById("btn").value;
+   document.getElementById("hour").innerHTML = hora;
+}if(id === 2){
+ var hora = document.getElementById("btn2").value;
+ document.getElementById("hour").innerHTML = hora;
+}if(id === 3){
+ var hora = document.getElementById("btn3").value;
+ document.getElementById("hour").innerHTML = hora;
+}if(id === 4){
+ var hora = document.getElementById("btn4").value;
+ document.getElementById("hour").innerHTML = hora;
+}if(id === 5){
+ var hora = document.getElementById("btn5").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 6){
+ var hora = document.getElementById("btn6").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 7){
+ var hora = document.getElementById("btn7").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 8){
+ var hora = document.getElementById("btn8").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 9){
+ var hora = document.getElementById("btn9").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 10){
+ var hora = document.getElementById("btn10").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 11){
+ var hora = document.getElementById("btn11").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 12){
+ var hora = document.getElementById("btn12").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 13){
+ var hora = document.getElementById("btn13").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 14){
+ var hora = document.getElementById("btn14").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 15){
+ var hora = document.getElementById("btn15").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 16){
+ var hora = document.getElementById("btn16").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 17){
+ var hora = document.getElementById("btn17").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 18){
+ var hora = document.getElementById("btn18").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 19){
+ var hora = document.getElementById("btn19").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 20){
+ var hora = document.getElementById("btn20").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 21){
+ var hora = document.getElementById("btn21").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 22){
+ var hora = document.getElementById("btn22").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 23){
+ var hora = document.getElementById("btn23").value;
+ document.getElementById("hour").innerHTML = hora;
+ }if(id === 24){
+ var hora = document.getElementById("btn24").value;
+ document.getElementById("hour").innerHTML = hora;
+}
+}
+</script>
 
 </body>
 </html>

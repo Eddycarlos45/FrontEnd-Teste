@@ -41,7 +41,7 @@
     <div class="row">
       <div class="flex-container grid col-md-8">
 
-        <input id="btn" value="00h" onclick="funcao(1)" class="azul" readonly="true" type="text"></input>
+        <input id="btn1" value="00h" onclick="funcao(1)" class="azul" readonly="true" type="text"></input>
         <input id="btn2" value="01h" onclick="funcao(2)" class="rosa" readonly="true" type="text"></input>
         <input id="btn3" value="02h" onclick="funcao(3)" class="amarelo" readonly="true" type="text"></input>
         <input id="btn4" value="03h" onclick="funcao(4)" class="azul" readonly="true" type="text"></input>
@@ -157,78 +157,11 @@
 
 <script>
 function funcao(id) {
- if(id === 1){
-   var hora = document.getElementById("btn").value;
+  for(i=0;i<=24;i++){
+ if(id === i){
+   var hora = document.getElementById("btn" + i).value;
    document.getElementById("hour").innerHTML = hora;
-}if(id === 2){
- var hora = document.getElementById("btn2").value;
- document.getElementById("hour").innerHTML = hora;
-}if(id === 3){
- var hora = document.getElementById("btn3").value;
- document.getElementById("hour").innerHTML = hora;
-}if(id === 4){
- var hora = document.getElementById("btn4").value;
- document.getElementById("hour").innerHTML = hora;
-}if(id === 5){
- var hora = document.getElementById("btn5").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 6){
- var hora = document.getElementById("btn6").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 7){
- var hora = document.getElementById("btn7").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 8){
- var hora = document.getElementById("btn8").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 9){
- var hora = document.getElementById("btn9").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 10){
- var hora = document.getElementById("btn10").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 11){
- var hora = document.getElementById("btn11").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 12){
- var hora = document.getElementById("btn12").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 13){
- var hora = document.getElementById("btn13").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 14){
- var hora = document.getElementById("btn14").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 15){
- var hora = document.getElementById("btn15").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 16){
- var hora = document.getElementById("btn16").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 17){
- var hora = document.getElementById("btn17").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 18){
- var hora = document.getElementById("btn18").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 19){
- var hora = document.getElementById("btn19").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 20){
- var hora = document.getElementById("btn20").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 21){
- var hora = document.getElementById("btn21").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 22){
- var hora = document.getElementById("btn22").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 23){
- var hora = document.getElementById("btn23").value;
- document.getElementById("hour").innerHTML = hora;
- }if(id === 24){
- var hora = document.getElementById("btn24").value;
- document.getElementById("hour").innerHTML = hora;
+ }
 }
 }
 </script>

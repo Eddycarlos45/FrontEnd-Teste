@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cartoon Network</title>
+  <link rel="stylesheet" media="all" href="css/style.css">
+  <link rel="" media="all" href="css/style.css">
+
+</head>
+
+<body class="layout" onload=DateNow();time()>
+  <header class=" header grid grid-header logo-header"><a href="#"><img width="50px" height="40px"
+        src="res/Cartoon_Network.png"></a>
+    <div class="video"><iframe src="https://www.youtube.com/embed/xB348sogE3A" width="520" height="60"
+        frameborder="0"></iframe>
+      <div class="publicity">publicidade</div>
+    </div>
+    <input type="text" value="PROCURAR">
+    <div id="now-hour"></div>
+    <div class="text-desenho">O Incrivel Mundo de Gamball</div>
+    <div class="plus">+</div>
+  </header>
+  <div id="date" class="date grid-date"></div>
+  <main class="grid grid-main content">
+    <input id="btn1" value="00h" onclick="funcao(1);gridColor(1);item_back_color(1,1)"class="azul item" readonly="true" type="text"></input>
+    <input id="btn2" value="01h" onclick="funcao(2);gridColor(2);item_back_color(2,2)" class="rosa item" readonly="true" type="text"></input>
+    <input id="btn3" value="02h" onclick="funcao(3);gridColor(3);item_back_color(3,3)" class="amarelo item" readonly="true" type="text"></input>
+    <input id="btn4" value="03h" onclick="funcao(4);gridColor(1);item_back_color(4,1)" class="azul item" readonly="true" type="text"></input>
+    <input id="btn5" value="04h" onclick="funcao(5);gridColor(2);item_back_color(5,2)" class="rosa item" readonly="true" type="text"></input>
+    <input id="btn6" value="05h" onclick="funcao(6);gridColor(3);item_back_color(6,3)" class="amarelo item" readonly="true" type="text"></input>
+    <input id="btn7" value="06h" onclick="funcao(7);gridColor(1);item_back_color(7,1)" class="azul item" readonly="true" type="text"></input>
+    <input id="btn8" value="07h" onclick="funcao(8);gridColor(2);item_back_color(8,2)" class="rosa item" readonly="true" type="text"></input>
+    <input id="btn9" value="08h" onclick="funcao(9);gridColor(3);item_back_color(9,3)" class="amarelo item" readonly="true" type="text"></input>
+    <input id="btn10" value="09h" onclick="funcao(10);gridColor(1);item_back_color(10,1)" class="azul item" readonly="true" type="text"></input>
+    <input id="btn11" value="10h" onclick="funcao(11);gridColor(2);item_back_color(11,2)" class="rosa item" readonly="true" type="text"></input>
+    <input id="btn12" value="11h" onclick="funcao(12);gridColor(3);item_back_color(12,3)" class="amarelo item" readonly="true" type="text"></input>
+    <input id="btn13" value="12h" onclick="funcao(13);gridColor(1);item_back_color(13,1)" class="azul item" readonly="true" type="text"></input>
+    <input id="btn14" value="13h" onclick="funcao(14);gridColor(2);item_back_color(14,2)" class="rosa item" readonly="true" type="text"></input>
+    <input id="btn15" value="14h" onclick="funcao(15);gridColor(3);item_back_color(15,3)" class="amarelo item" readonly="true" type="text"></input>
+    <input id="btn16" value="15h" onclick="funcao(16);gridColor(1);item_back_color(16,1)" class="azul item" readonly="true" type="text"></input>
+    <input id="btn17" value="16h" onclick="funcao(17);gridColor(2);item_back_color(17,2)" class="rosa item" readonly="true" type="text"></input>
+    <input id="btn18" value="17h" onclick="funcao(18);gridColor(3);item_back_color(18,3)" class="amarelo item" readonly="true" type="text"></input>
+    <input id="btn19" value="18h" onclick="funcao(19);gridColor(1);item_back_color(19,1)" class="azul item" readonly="true" type="text"></input>
+    <input id="btn20" value="19h" onclick="funcao(20);gridColor(2);item_back_color(20,2)" class="rosa item" readonly="true" type="text"></input>
+    <input id="btn21" value="20h" onclick="funcao(21);gridColor(3);item_back_color(21,3)" class="amarelo item" readonly="true" type="text"></input>
+    <input id="btn22" value="21h" onclick="funcao(22);gridColor(1);item_back_color(22,1)" class="azul item" readonly="true" type="text"></input>
+    <input id="btn23" value="22h" onclick="funcao(23);gridColor(2);item_back_color(23,2)" class="rosa item" readonly="true" type="text"></input>
+    <input id="btn24" value="23h" onclick="funcao(24);gridColor(3);item_back_color(24,3)" class="amarelo item" readonly="true" type="text"></input>
+    <input id="btn25" value=">" onclick="nextDay()" class="proximo" readonly="true" type="text"></input>
+  </main>
+
+  <aside class="grid grid-aside">
+    <ul id="aside">
+      <li>
+        <div id="hour" class="hour">23h</div>
+      </li>
+      <li>
+        <div id="item-grid1">
+          <div id="grid-hour1" class="grid-hour">23:00</div>
+          <div id="grid-image" class="grid-image"><img width="60px" height="58px" src="res/Apenas.png"></div>
+          <div id="grid-name" class="grid-name">Apena um show</div>
+        </div>
+      </li>
+      <li>
+        <div id="item-grid2">
+          <div id="grid-hour2" class="grid-hour">23:15</div>
+          <div id="grid-image" class="grid-image"><img width="60px" height="58px" src="res/Apenas.png"></div>
+          <div id="grid-name" class="grid-name">Apenas um show</div>
+        </div>
+      </li>
+      <li>
+        <div id="item-grid3">
+          <div id="grid-hour3" class="grid-hour">23:30</div>
+          <div id="grid-image" class="grid-image"><img width="60px" height="58px" src="res/clarencio.png"></div>
+          <div id="grid-name" class="grid-name">Clarencio, O Otimista</div>
+        </div>
+      </li>
+      <li>
+        <div id="item-grid4">
+          <div id="grid-hour4" class="grid-hour">23:45</div>
+          <div id="grid-image" class="grid-image"><img width="60px" height="58px" src="res/clarencio.png"></div>
+          <div id="grid-name" class="grid-name">Clarencio, O Otimista</div>
+        </div>
+      </li>
+    </ul>
+
+
+
+  </aside>
+
+  <div class="grid-carousel">
+    <div id="jcl-demo">
+      <div class="custom-container default border-carousel">
+        <a href="#" class="prev">&lsaquo;</a>
+        <div class="carousel">
+          <ul>
+            <li><img src="res/finn.png"></li>
+            <li><img src="res/Jorel.png"></li>
+            <li><img src="res/Coragem.png"></li>
+            <li><img src="res/Gamball.png"></li>
+            <li><img src="res/Steven.png"></li>
+          </ul>
+        </div>
+        <a href="#" class="next">&rsaquo;</a>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+  <footer class="grid grid-footer footer logo-footer">
+    <a id="logo-footer" href="#"><img width="60px" height="50px" src="res/Cartoon_Network.png"></a>
+    <h5 class="text-footer"> Jogos e videos gratís de Ben 10, Hora de Aventura com Finn e Jake, Apenas um Show,
+      A Turma da Mônica, O incrivel Mundo de Gamball, Steven universo, Titio Avô, Tonnix e muito mais!
+    </h5>
+    <ul id="menu">
+      <li><a href="#">GUIA PARA PAIS</a></li>
+      <li><a href="#">DICAS DE SEGURANÇA</a></li>
+      <li><a href="#">PROGRAMAÇÃO</a></li>
+      <li><a href="#">PROGRAMAÇÃO EFETIVAMENTE VINCULADA</a></li>
+    </ul>
+    <ul id="submenu">
+      <li><a href="#">PROGRAMAÇÃO EFETIVAMENTE VINCULADA(HD)</a></li>
+      <li><a href="#">AJUDA</a></li>
+    </ul>
+  </footer>
+
+  <script src="jquery/jquery-1.11.1.js"></script>
+  <script src="jquery/jquery.easing-1.3.js"></script>
+  <script src="jquery/jquery.mousewheel-3.1.12.js"></script>
+  <script src="jquery/jquery.jcarousellite.js"></script>
+  <script src="javascript/functions.js"></script>
+
+</body>
+
+</html>
